@@ -1,0 +1,8 @@
+<div>
+  <h3> {{ name }} </h3>
+  <ul>
+  {% for e in entries %}
+  <li> <a href={{e.link}}>{{ e.title }}</a> </li>
+  {% endfor %}
+  </ul>
+</div>

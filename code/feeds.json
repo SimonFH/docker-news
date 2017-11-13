@@ -1,0 +1,52 @@
+{
+  "feeds":[
+    {
+      "name": "DR",
+      "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder"
+    },
+    {
+      "name": "TV2",
+      "url": "feed://feeds.tv2.dk/nyheder/rss"
+    },
+    {
+      "name": "Ekstrabladet",
+      "url": "http://ekstrabladet.dk/rss2/?mode=normal"
+    },
+    {
+      "name": "BT",
+      "url": "http://www.bt.dk/bt/seneste/rss"
+    },
+    {
+      "name": "Berlingske",
+      "url": "https://www.b.dk/seneste/rss"
+    },
+    {
+      "name": "Business.dk",
+      "url": "https://www.business.dk/seneste/rss"
+    },
+    {
+      "name": "Børsen",
+      "url": "feed://borsen.dk/rss/"
+    },
+    {
+      "name": "Politiken",
+      "url": "http://politiken.dk/rss/senestenyt.rss"
+    },
+    {
+      "name": "Ingeniøren",
+      "url": "https://ing.dk/rss/nyheder"
+    },
+    {
+      "name": "Jyllands-Posten",
+      "url": "http://jp.dk/?service=rssfeed&submode=topnyheder"
+    },
+    {
+      "name": "Fyens Stifstidende",
+      "url": "feed:https://www.fyens.dk/rss.xml"
+    },
+    {
+      "name": "EuroInvestor",
+      "url": "http://www.euroinvestor.dk/RSS/News.aspx"
+    }
+  ]
+}
