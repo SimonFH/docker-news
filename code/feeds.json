@@ -5,20 +5,20 @@
       "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder"
     },
     {
-      "name": "TV2",
-      "url": "feed://feeds.tv2.dk/nyheder/rss"
-    },
-    {
-      "name": "Ekstrabladet",
-      "url": "http://ekstrabladet.dk/rss2/?mode=normal"
-    },
-    {
       "name": "BT",
       "url": "http://www.bt.dk/bt/seneste/rss"
     },
     {
       "name": "Berlingske",
       "url": "https://www.b.dk/seneste/rss"
+    },
+    {
+      "name": "Jyllands-Posten",
+      "url": "http://jp.dk/?service=rssfeed&submode=topnyheder"
+    },
+    {
+      "name": "TV2",
+      "url": "feed://feeds.tv2.dk/nyheder/rss"
     },
     {
       "name": "Business.dk",
@@ -33,12 +33,12 @@
       "url": "http://politiken.dk/rss/senestenyt.rss"
     },
     {
-      "name": "Ingeniøren",
-      "url": "https://ing.dk/rss/nyheder"
+      "name": "Ekstrabladet",
+      "url": "http://ekstrabladet.dk/rss2/?mode=normal"
     },
     {
-      "name": "Jyllands-Posten",
-      "url": "http://jp.dk/?service=rssfeed&submode=topnyheder"
+      "name": "Ingeniøren",
+      "url": "https://ing.dk/rss/nyheder"
     },
     {
       "name": "Fyens Stifstidende",
