@@ -1,10 +1,19 @@
 version: '3'
 services:
   web:
-    build: .
+    build: web 
     ports:
      - "5000:5000"
     volumes:
-     - ./code:/code
+     - ./web/code:/code
+     - shared:/shared
+  worker:
+    build: worker 
+    volumes:
+     - ./worker/code:/code
+     - shared:/shared
        #  redis:
        #    image: "redis:alpine"
+
+volumes:
+  shared:

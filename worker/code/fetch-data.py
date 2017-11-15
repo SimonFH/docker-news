@@ -13,7 +13,7 @@ def main():
         d.append(t)
     #d = [(feed['name'], feedparser.parse(feed['url'])) for feed in feeds]
 
-    with open('data.json', 'w+') as fp:
+    with open('/shared/data.json', 'w+') as fp:
         json.dump(d, fp)
 
 if __name__ == "__main__":

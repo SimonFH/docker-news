@@ -1,6 +1,5 @@
 #from flask import Flask, session, redirect, url_for, escape, request
 from flask import Flask, render_template
-import feedparser
 import json
 import math
 
@@ -8,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    with open('data.json', 'r') as fp:
+    with open('/shared/data.json', 'r') as fp:
         feeds = json.load(fp)
 
     s = []

@@ -1,2 +1,0 @@
-*/5 * * * * root python fetch-data.sh
-

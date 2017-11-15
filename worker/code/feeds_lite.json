@@ -1,0 +1,8 @@
+{
+  "feeds":[
+    {
+      "name": "DR",
+      "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder"
+    }
+  ]
+}
