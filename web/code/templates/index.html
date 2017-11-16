@@ -59,10 +59,10 @@
             <ul class="list-group">
               {% for e in f.entries %}
               {% if loop.index == 11 %}
-              <div class="collapse" id="collapse{{f.name}}">
+                <div class="collapse" id="collapse{{f.name}}">
               {% endif %}
-                <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
-                {% if loop.index == loop.length and loop.length >= 11 %}
+              <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
+              {% if loop.index == loop.length and loop.length >= 11 %}
                 </div>
               {% endif %}
               {% endfor %}
@@ -82,8 +82,8 @@
               {% if loop.index == 11 %}
               <div class="collapse" id="collapse{{f.name}}">
               {% endif %}
-                <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
-                {% if loop.index == loop.length and loop.length >= 11 %}
+              <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
+              {% if loop.index == loop.length and loop.length >= 11 %}
                 </div>
               {% endif %}
               {% endfor %}
@@ -102,8 +102,8 @@
               {% if loop.index == 11 %}
               <div class="collapse" id="collapse{{f.name}}">
               {% endif %}
-                <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
-                {% if loop.index == loop.length and loop.length >= 11 %}
+              <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
+              {% if loop.index == loop.length and loop.length >= 11 %}
                 </div>
               {% endif %}
               {% endfor %}
