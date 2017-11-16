@@ -10,10 +10,6 @@ def index():
     with open('/shared/data.json', 'r') as fp:
         feeds = json.load(fp)
 
-    s = []
-    for f in feeds:
-        s.append(render_template('list.html', name=f.get('name'), entries=f.get('entries')))
-
     i = len(feeds)
     j = int(math.ceil(float(i)/3))
     k = int(math.ceil(float(i)/3*2))
@@ -21,7 +17,10 @@ def index():
     feeds_mid = feeds[j:k]
     feeds_right = feeds[k:i]
 
+    # maybe split into smaller templates
+
     return render_template('index.html', feeds_left=feeds_left, feeds_mid=feeds_mid, feeds_right=feeds_right)
+
 #@app.route('/login', methods=['GET', 'POST'])
 #def login():
 #    if request.method == 'POST':

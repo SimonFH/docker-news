@@ -7,13 +7,13 @@ services:
     volumes:
      - ./web/code:/code
      - shared:/shared
+    depends_on:
+     - worker
   worker:
     build: worker 
     volumes:
      - ./worker/code:/code
      - shared:/shared
-       #  redis:
-       #    image: "redis:alpine"
 
 volumes:
   shared:
