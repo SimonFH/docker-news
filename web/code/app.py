@@ -10,6 +10,10 @@ def index():
     with open('/shared/data.json', 'r') as fp:
         feeds = json.load(fp)
 
+    # add an id to each feed
+    for f,i in zip(feeds, range(1,len(feeds)+1)):
+        f['id'] = i
+
     i = len(feeds)
     j = int(math.ceil(float(i)/3))
     k = int(math.ceil(float(i)/3*2))

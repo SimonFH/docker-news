@@ -59,7 +59,7 @@
             <ul class="list-group">
               {% for e in f.entries %}
               {% if loop.index == 11 %}
-                <div class="collapse" id="collapse{{f.name}}">
+                <div class="collapse" id="collapse{{f.id}}">
               {% endif %}
               <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
               {% if loop.index == loop.length and loop.length >= 11 %}
@@ -67,7 +67,7 @@
               {% endif %}
               {% endfor %}
               {% if f.entries|length >= 11 %}
-              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.name}}" ></button>
+              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.id}}" ></button>
               {% endif %}
             </ul>
             {% endfor %}
@@ -80,7 +80,7 @@
             <ul class="list-group">
               {% for e in f.entries %}
               {% if loop.index == 11 %}
-              <div class="collapse" id="collapse{{f.name}}">
+              <div class="collapse" id="collapse{{f.id}}">
               {% endif %}
               <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
               {% if loop.index == loop.length and loop.length >= 11 %}
@@ -88,7 +88,7 @@
               {% endif %}
               {% endfor %}
               {% if f.entries|length >= 11 %}
-              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.name}}" ></button>
+              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.id}}" ></button>
               {% endif %}
             </ul>
             {% endfor %}
@@ -100,7 +100,7 @@
             <ul class="list-group">
               {% for e in f.entries %}
               {% if loop.index == 11 %}
-              <div class="collapse" id="collapse{{f.name}}">
+              <div class="collapse" id="collapse{{f.id}}">
               {% endif %}
               <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
               {% if loop.index == loop.length and loop.length >= 11 %}
@@ -108,7 +108,7 @@
               {% endif %}
               {% endfor %}
               {% if f.entries|length >= 11 %}
-              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.name}}" ></button>
+              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.id}}" ></button>
               {% endif %}
             </ul>
             {% endfor %}
