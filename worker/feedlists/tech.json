@@ -1,0 +1,28 @@
+{
+  "feeds":[
+    {
+      "name": "Version2",
+      "url": "https://www.version2.dk/it-nyheder/rss"
+    },
+    {
+      "name": "TV2 Beep",
+      "url": "http://feeds.tv2.dk/beep_seneste/rss"
+    },
+    {
+      "name": "DR Viden",
+      "url": "https://www.dr.dk/nyheder/service/feeds/viden"
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://hnrss.org/frontpage"
+    },
+    {
+      "name": "Ars Technica",
+      "url": "http://feeds.arstechnica.com/arstechnica/index"
+    },
+    {
+      "name": "Slashdot",
+      "url": "http://rss.slashdot.org/Slashdot/slashdotMain"
+    }
+  ]
+}

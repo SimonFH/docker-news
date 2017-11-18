@@ -7,23 +7,40 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    with open('/shared/data.json', 'r') as fp:
+    feeds = loadFeeds('/shared/danske_data.json')
+    feeds_left, feeds_mid, feeds_right = splitFeeds(feeds)
+
+    # maybe split into smaller templates
+    return render_template('index.html', feeds_left=feeds_left, feeds_mid=feeds_mid, feeds_right=feeds_right)
+
+@app.route('/tech')
+def tech():
+    feeds = loadFeeds('/shared/tech_data.json')
+    feeds_left, feeds_mid, feeds_right = splitFeeds(feeds)
+    return render_template('index.html', feeds_left=feeds_left, feeds_mid=feeds_mid, feeds_right=feeds_right)
+
+@app.route('/finans')
+def finans():
+    feeds = loadFeeds('/shared/finans_data.json')
+    feeds_left, feeds_mid, feeds_right = splitFeeds(feeds)
+    return render_template('index.html', feeds_left=feeds_left, feeds_mid=feeds_mid, feeds_right=feeds_right)
+
+
+def loadFeeds(path):
+    with open(path, 'r') as fp:
         feeds = json.load(fp)
 
-    # add an id to each feed
-    for f,i in zip(feeds, range(1,len(feeds)+1)):
-        f['id'] = i
+    return feeds
 
+def splitFeeds(feeds):
     i = len(feeds)
     j = int(math.ceil(float(i)/3))
     k = int(math.ceil(float(i)/3*2))
     feeds_left = feeds[0:j]
     feeds_mid = feeds[j:k]
     feeds_right = feeds[k:i]
+    return feeds_left, feeds_mid, feeds_right
 
-    # maybe split into smaller templates
-
-    return render_template('index.html', feeds_left=feeds_left, feeds_mid=feeds_mid, feeds_right=feeds_right)
 
 #@app.route('/login', methods=['GET', 'POST'])
 #def login():
