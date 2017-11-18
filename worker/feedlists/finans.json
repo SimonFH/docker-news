@@ -1,0 +1,24 @@
+{
+  "feeds":[
+    {
+      "name": "Børsen",
+      "url": "feed://borsen.dk/rss/"
+    },
+    {
+      "name": "TV2 Business",
+      "url": "http://feeds.tv2.dk/finans_seneste/rss"
+    },
+    {
+      "name": "Business.dk",
+      "url": "https://www.business.dk/seneste/rss"
+    },
+    {
+      "name": "DR Penge",
+      "url": "https://www.dr.dk/nyheder/service/feeds/penge"
+    },
+    {
+      "name": "EuroInvestor",
+      "url": "http://www.euroinvestor.dk/RSS/News.aspx"
+    }
+  ]
+}

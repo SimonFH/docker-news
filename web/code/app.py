@@ -13,15 +13,15 @@ def index():
     # maybe split into smaller templates
     return render_template('index.html', feeds_left=feeds_left, feeds_mid=feeds_mid, feeds_right=feeds_right)
 
-@app.route('/tech')
-def tech():
-    feeds = loadFeeds('/shared/tech_data.json')
-    feeds_left, feeds_mid, feeds_right = splitFeeds(feeds)
-    return render_template('index.html', feeds_left=feeds_left, feeds_mid=feeds_mid, feeds_right=feeds_right)
-
 @app.route('/finans')
 def finans():
     feeds = loadFeeds('/shared/finans_data.json')
+    feeds_left, feeds_mid, feeds_right = splitFeeds(feeds)
+    return render_template('index.html', feeds_left=feeds_left, feeds_mid=feeds_mid, feeds_right=feeds_right)
+
+@app.route('/tech')
+def tech():
+    feeds = loadFeeds('/shared/tech_data.json')
     feeds_left, feeds_mid, feeds_right = splitFeeds(feeds)
     return render_template('index.html', feeds_left=feeds_left, feeds_mid=feeds_mid, feeds_right=feeds_right)
 

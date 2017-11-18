@@ -5,8 +5,8 @@
       "url": "https://www.version2.dk/it-nyheder/rss"
     },
     {
-      "name": "TV2 Beep",
-      "url": "http://feeds.tv2.dk/beep_seneste/rss"
+      "name": "Ars Technica",
+      "url": "http://feeds.arstechnica.com/arstechnica/index"
     },
     {
       "name": "DR Viden",
@@ -17,9 +17,10 @@
       "url": "https://hnrss.org/frontpage"
     },
     {
-      "name": "Ars Technica",
-      "url": "http://feeds.arstechnica.com/arstechnica/index"
+      "name": "TV2 Beep",
+      "url": "http://feeds.tv2.dk/beep_seneste/rss"
     },
+
     {
       "name": "Slashdot",
       "url": "http://rss.slashdot.org/Slashdot/slashdotMain"
