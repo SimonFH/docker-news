@@ -1,0 +1,37 @@
+{% macro col(feeds) -%}
+          <div class="col-lg-4">
+            {% for f in feeds %}
+            <h2 class="text-left"><a class="feedtitle" href="{{f.site}}" target="_blank" >{{ f.name }}</a></h2>
+            <ul class="list-group">
+              {% for e in f.entries %}
+                {% if loop.index == 11 %}
+                <div class="collapse" id="collapse{{f.id}}">
+                {% endif %}
+                <li class="container list-group-item">
+                {% if e.comments %}
+                  <div class="row align-items-start">
+                  <div class="col col-sm-11">
+                    <a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}
+                    </a>
+                  </div>
+                  <div class="col-sm-1">
+                    <a href="{{e.comments}}" target="_blank">💬
+                    </a>
+                  </div> 
+                  </div>
+                {% else %}
+                <a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}
+                </a>
+                {% endif %} 
+                </li>
+                {% if loop.index == loop.length and loop.length >= 11 %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+              {% if f.entries|length >= 11 %}
+              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.id}}" ></button>
+              {% endif %}
+            </ul>
+            {% endfor %}
+          </div>
+{%- endmacro %}

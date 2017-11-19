@@ -55,68 +55,10 @@
 
     <section class="success" id="feeds">
         <div class="row">
-
-          <div class="col-lg-4">
-            {% for f in feeds_left %}
-            <h2 class="text-left"><a class="feedtitle" href="{{f.site}}" target="_blank" >{{ f.name }}</a></h2>
-            <ul class="list-group">
-              {% for e in f.entries %}
-              {% if loop.index == 11 %}
-                <div class="collapse" id="collapse{{f.id}}">
-              {% endif %}
-              <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
-              {% if loop.index == loop.length and loop.length >= 11 %}
-                </div>
-              {% endif %}
-              {% endfor %}
-              {% if f.entries|length >= 11 %}
-              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.id}}" ></button>
-              {% endif %}
-            </ul>
-            {% endfor %}
-
-          </div>
-
-          <div class="col-lg-4">
-            {% for f in feeds_mid %}
-            <h2 class="text-left"><a class="feedtitle" href="{{f.site}}" target="_blank" >{{ f.name }}</a></h2>
-            <ul class="list-group">
-              {% for e in f.entries %}
-              {% if loop.index == 11 %}
-              <div class="collapse" id="collapse{{f.id}}">
-              {% endif %}
-              <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
-              {% if loop.index == loop.length and loop.length >= 11 %}
-                </div>
-              {% endif %}
-              {% endfor %}
-              {% if f.entries|length >= 11 %}
-              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.id}}" ></button>
-              {% endif %}
-            </ul>
-            {% endfor %}
-          </div>
-
-          <div class="col-lg-4">
-            {% for f in feeds_right %}
-            <h2 class="text-left"><a class="feedtitle" href="{{f.site}}" target="_blank" >{{ f.name }}</a></h2>
-            <ul class="list-group">
-              {% for e in f.entries %}
-              {% if loop.index == 11 %}
-              <div class="collapse" id="collapse{{f.id}}">
-              {% endif %}
-              <li class="list-group-item"><a class="success-link" href="{{e.link}}" target="_blank">{{ e.title }}</a></li>
-              {% if loop.index == loop.length and loop.length >= 11 %}
-                </div>
-              {% endif %}
-              {% endfor %}
-              {% if f.entries|length >= 11 %}
-              <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapse{{f.id}}" ></button>
-              {% endif %}
-            </ul>
-            {% endfor %}
-          </div>
-
+        {% import 'macros.html' as macros %}
+        {{macros.col(feeds_left)}}
+        {{macros.col(feeds_mid)}}
+        {{macros.col(feeds_right)}}
         </div>
       </div>
 
@@ -194,7 +136,7 @@
             <div class="footer-col col-md-6">
               <h3>Om siden</h3>
               <p> Siden kører i en docker container med flask og bootstrap.<br>
-                <a href="https://github.com/SimonFH/docker-news">Se kildekode</a>.</p>
+                <a class="success-link" href="https://github.com/SimonFH/docker-news">Se kildekode</a>.</p>
             </div>
           </div>
         </div>

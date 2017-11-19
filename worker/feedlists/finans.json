@@ -11,6 +11,11 @@
       "site": "http://nyheder.tv2.dk/business"
     },
     {
+      "name": "EuroInvestor",
+      "url": "http://www.euroinvestor.dk/RSS/News.aspx",
+      "site": "https://www.euroinvestor.dk/"
+    },
+    {
       "name": "Business.dk",
       "url": "https://www.business.dk/seneste/rss",
       "site": "https://www.business.dk/"
@@ -19,12 +24,6 @@
       "name": "DR Penge",
       "url": "https://www.dr.dk/nyheder/service/feeds/penge",
       "site": "https://www.dr.dk/nyheder/allenyheder/penge"
-    },
-    {
-      "name": "EuroInvestor",
-      "url": "http://www.euroinvestor.dk/RSS/News.aspx",
-      "site": "https://www.euroinvestor.dk/"
-
     }
   ]
 }
