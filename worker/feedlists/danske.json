@@ -2,39 +2,48 @@
   "feeds":[
     {
       "name": "DR",
-      "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder"
+      "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder",
+      "site": "https://www.dr.dk/nyheder/"
     },
     {
       "name": "BT",
-      "url": "http://www.bt.dk/bt/seneste/rss"
+      "url": "http://www.bt.dk/bt/seneste/rss",
+      "site": "https://www.bt.dk/"
     },
     {
       "name": "Berlingske",
-      "url": "https://www.b.dk/seneste/rss"
+      "url": "https://www.b.dk/seneste/rss",
+      "site": "https://www.b.dk/"
     },
     {
       "name": "TV2",
-      "url": "feed://feeds.tv2.dk/nyheder/rss"
+      "url": "feed://feeds.tv2.dk/nyheder/rss",
+      "site": "https://nyheder.tv2.dk/"
     },
     {
       "name": "Jyllands-Posten",
-      "url": "http://jp.dk/?service=rssfeed&submode=topnyheder"
+      "url": "http://jp.dk/?service=rssfeed&submode=topnyheder",
+      "site": "https://www.jp.dk"
     },
         {
       "name": "Politiken",
-      "url": "http://politiken.dk/rss/senestenyt.rss"
+      "url": "http://politiken.dk/rss/senestenyt.rss",
+      "site": "https://www.politiken.dk/"
     },
     {
       "name": "Ekstrabladet",
-      "url": "http://ekstrabladet.dk/rss2/?mode=normal"
+      "url": "http://ekstrabladet.dk/rss2/?mode=normal",
+      "site": "https://www.ekstrabladet.dk/"
     },
     {
       "name": "Ingeniøren",
-      "url": "https://ing.dk/rss/nyheder"
+      "url": "https://ing.dk/rss/nyheder",
+      "site": "https://www.ing.dk/"
     },
     {
       "name": "Fyens Stifstidende",
-      "url": "feed:https://www.fyens.dk/rss.xml"
+      "url": "feed:https://www.fyens.dk/rss.xml",
+      "site": "https://www.fyens.dk/"
     }
   ]
 }

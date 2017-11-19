@@ -36,6 +36,8 @@ def main():
                 t = feedparser.parse(feed.get('url'))
                 # add name
                 t['name'] = feed.get('name')
+                # add sitelink
+                t['site'] = feed.get('site')
                 # add an id 
                 t['id'] = i
                 # remove stuff that crashes the json parser

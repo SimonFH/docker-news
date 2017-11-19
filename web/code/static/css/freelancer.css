@@ -14,9 +14,9 @@ p {
 p.small {
     font-size: 16px
 }
-a{
+/*a{
   color:rgba(178,182,185,1);
-}
+}*/
 a.active,
 a:active,
 a:focus,
@@ -575,8 +575,10 @@ fieldset[disabled] .btn-success:hover {
 }
 
 a.success-link{
+    color:rgba(178,182,185,1);
 }
 a.success-link:hover {
+    color:white;
     outline: 0;
     text-decoration: none;
 }
@@ -587,6 +589,9 @@ a.success-link:hover {
 }
 .success h2:hover{
   color: white;
+}
+.feedtitle{
+  color:white;
 }
 
 /* magic to change content of buttons */

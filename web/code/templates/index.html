@@ -58,7 +58,7 @@
 
           <div class="col-lg-4">
             {% for f in feeds_left %}
-            <h2 class="text-left" >{{ f.name }}</h2>
+            <h2 class="text-left"><a class="feedtitle" href="{{f.site}}" target="_blank" >{{ f.name }}</a></h2>
             <ul class="list-group">
               {% for e in f.entries %}
               {% if loop.index == 11 %}
@@ -79,7 +79,7 @@
 
           <div class="col-lg-4">
             {% for f in feeds_mid %}
-            <h2 class="text-left" >{{ f.name }}</h2>
+            <h2 class="text-left"><a class="feedtitle" href="{{f.site}}" target="_blank" >{{ f.name }}</a></h2>
             <ul class="list-group">
               {% for e in f.entries %}
               {% if loop.index == 11 %}
@@ -99,7 +99,7 @@
 
           <div class="col-lg-4">
             {% for f in feeds_right %}
-            <h2 class="text-left" >{{ f.name }}</h2>
+            <h2 class="text-left"><a class="feedtitle" href="{{f.site}}" target="_blank" >{{ f.name }}</a></h2>
             <ul class="list-group">
               {% for e in f.entries %}
               {% if loop.index == 11 %}

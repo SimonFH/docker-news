@@ -2,28 +2,33 @@
   "feeds":[
     {
       "name": "Version2",
-      "url": "https://www.version2.dk/it-nyheder/rss"
+      "url": "https://www.version2.dk/it-nyheder/rss",
+      "site": "https://www.version.dk/"
     },
     {
       "name": "Ars Technica",
-      "url": "http://feeds.arstechnica.com/arstechnica/index"
+      "url": "http://feeds.arstechnica.com/arstechnica/index",
+      "site": "https://www.arstechnica.com/"
     },
     {
       "name": "DR Viden",
-      "url": "https://www.dr.dk/nyheder/service/feeds/viden"
+      "url": "https://www.dr.dk/nyheder/service/feeds/viden",
+      "site": "https://www.dr.dk/nyheder/viden"
     },
     {
       "name": "Hacker News",
-      "url": "https://hnrss.org/frontpage"
+      "url": "https://hnrss.org/frontpage",
+      "site": "https://news.ycombinator.com/"
     },
     {
-      "name": "TV2 Beep",
-      "url": "http://feeds.tv2.dk/beep_seneste/rss"
+      "name": "TV2 Tech",
+      "url": "http://feeds.tv2.dk/beep_seneste/rss",
+      "site": "http://nyheder.tv2.dk/tech"
     },
-
     {
       "name": "Slashdot",
-      "url": "http://rss.slashdot.org/Slashdot/slashdotMain"
+      "url": "http://rss.slashdot.org/Slashdot/slashdotMain",
+      "site": "https://www.slashdot.org/"
     }
   ]
 }
