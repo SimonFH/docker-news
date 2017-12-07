@@ -6,7 +6,6 @@ Content is presented in a bootstrapped site inspired by [readspike.com](http://r
 ---
 
 To run, install docker, pull the project and execute
-* _docker-compose build_
 * _docker-compose up -d_
 
 The website is now available at [localhost:5000](localhost:5000)
